@@ -127,10 +127,15 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS Settings
+# CORS Settings
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://localhost:5173",
+    "https://taskmaster-app-pratiksha.vercel.app",  # We'll update this
 ]
+
+# For now, allow all origins (we'll restrict later)
+CORS_ALLOW_ALL_ORIGINS = True
 
 # REST Framework Settings
 REST_FRAMEWORK = {
